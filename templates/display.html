@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="cointainer" style="margin: 30px 50% 30px 40%">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top" src="/media/{{post.image}}" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.content}}</p>
+
+          <br><br/>
+          <hr>
+          <br/>
+
+
+          <h1>Comments....</h1>
+            <br>
+
+          {% if not post.comments.all %}
+             No comments Yet.....<a href="#">Add one</a>
+          {% else %}
+              {% for comment in post.comments.all %}
+
+            <strong>{{comment.name}}</strong>
+
+            <strong>{{comment.date_added}}</strong>
+            <br/>
+            {{comment.content}}
+            <br><br/>
+            <hr>
+              {% endfor %}
+            {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+<!--            iterate through models-->
+
+
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<!-- <form action="blog" method="post">   
+
+    {% csrf_token %}
+<input type="text" value="title" name="tt">
+<input type="text" value="description"  name="mt">
+<input type="file" value="title"  name="st">
+    <input type="submit" value="submit">
+
+</form>  -->
+
+<form action="blog" method="post">
+  {% csrf_token %}
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" >tittle</label>
+    <input type="text"   name="tt">
+   
+  </div>
+  <div class="mb-3" >
+    <input type="text"  name="mt" style="height:100px" value="description">
+  </div>
+
+  <div class="mb-1">
+      <input type="file" name="st" value="images">
+    
+  </div>
+ 
+  <input type="submit" class="btn btn-primary" value="submit">Submit</button>
+</form>
+
+
+
+
+{% endblock %}

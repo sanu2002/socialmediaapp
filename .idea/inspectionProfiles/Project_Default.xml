@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E303" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="selenium.webdriver.Chrome" />
+          <option value="selenium.webdriver" />
+          <option value="MSA.MSAAPP.models.City.objects" />
+          <option value="MSA.MSAAPP.models.Course.objects" />
+          <option value="os.join" />
+          <option value="extraproject.exapp.models.City.objects" />
+          <option value="extraproject.exapp.models.Course.objects" />
+          <option value="django.contrib.sites.requests.post" />
+          <option value="django.contrib.auth.models.Model" />
+          <option value="quiztest.quiztestapp.models.abstract" />
+          <option value="studentproject.stuapp.views.user" />
+          <option value="otpproject.otpapp.models.CustomUser" />
+          <option value="firstproject.firstapp.models.Sanumodel.is_valid" />
+          <option value="fstproject.settings.BASE_DIR" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

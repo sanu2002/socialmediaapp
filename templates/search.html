@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+<div class="cointainer" style="margin: 30px 50% 30px 40%">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top" src="/media/{{quotes.image}}" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{quotes.title}}</h5>
+          <p class="card-text">{{quotes.content}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

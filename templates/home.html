@@ -1,0 +1,60 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+
+
+{% load static %}
+
+
+<div class="cointainer" style="margin: 30px 10px 30px 40px">
+  <div class="row" >
+    {% for x in blogs %}
+
+    <div class="col-lg-4 d-flex align-items-stretch">
+      <div class="card" style="width:18rem" >
+        <img class="card-img-top" src="/media/{{x.image}}" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{x.title}}</h5>
+          <p class="card-text">{{x.content}}</p>
+
+          <a href="{% url 'post' x.id %}">Read more >>>></a>
+<!--          #here you can see the comment section in each blog-->
+<!--          <div class="fb-comments" data-href="http://127.0.0.1:8000/index" data-width="" data-numposts="5"></div>-->
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+

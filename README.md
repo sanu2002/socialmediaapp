@@ -1,4 +1,4 @@
-# socialmediaapp
+# SOCIAL MEDIA APP
 In this proejct i just simply add the feature like comment ,Blog posting ,login,signup,later i will add something more this project gives the basic idea about ,how post,comment and all those stufff work
 
 
